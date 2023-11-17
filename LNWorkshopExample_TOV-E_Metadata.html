@@ -1,0 +1,487 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+<meta charset="utf-8" />
+<meta name="generator" content="pandoc" />
+<meta http-equiv="X-UA-Compatible" content="IE=EDGE" />
+
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+
+
+
+<title>LNWorkshopExample_TOV-E_Metadata</title>
+
+<script>// Pandoc 2.9 adds attributes on both header and div. We remove the former (to
+// be compatible with the behavior of Pandoc < 2.8).
+document.addEventListener('DOMContentLoaded', function(e) {
+  var hs = document.querySelectorAll("div.section[class*='level'] > :first-child");
+  var i, h, a;
+  for (i = 0; i < hs.length; i++) {
+    h = hs[i];
+    if (!/^h[1-6]$/i.test(h.tagName)) continue;  // it should be a header h1-h6
+    a = h.attributes;
+    while (a.length > 0) h.removeAttribute(a[0].name);
+  }
+});
+</script>
+
+<style type="text/css">
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+span.underline{text-decoration: underline;}
+div.column{display: inline-block; vertical-align: top; width: 50%;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+</style>
+
+
+
+<style type="text/css">
+code {
+white-space: pre;
+}
+.sourceCode {
+overflow: visible;
+}
+</style>
+<style type="text/css" data-origin="pandoc">
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+{ counter-reset: source-line 0; }
+pre.numberSource code > span
+{ position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+{ content: counter(source-line);
+position: relative; left: -1em; text-align: right; vertical-align: baseline;
+border: none; display: inline-block;
+-webkit-touch-callout: none; -webkit-user-select: none;
+-khtml-user-select: none; -moz-user-select: none;
+-ms-user-select: none; user-select: none;
+padding: 0 4px; width: 4em;
+color: #aaaaaa;
+}
+pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa; padding-left: 4px; }
+div.sourceCode
+{ }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+code span.al { color: #ff0000; font-weight: bold; } 
+code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } 
+code span.at { color: #7d9029; } 
+code span.bn { color: #40a070; } 
+code span.bu { color: #008000; } 
+code span.cf { color: #007020; font-weight: bold; } 
+code span.ch { color: #4070a0; } 
+code span.cn { color: #880000; } 
+code span.co { color: #60a0b0; font-style: italic; } 
+code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } 
+code span.do { color: #ba2121; font-style: italic; } 
+code span.dt { color: #902000; } 
+code span.dv { color: #40a070; } 
+code span.er { color: #ff0000; font-weight: bold; } 
+code span.ex { } 
+code span.fl { color: #40a070; } 
+code span.fu { color: #06287e; } 
+code span.im { color: #008000; font-weight: bold; } 
+code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } 
+code span.kw { color: #007020; font-weight: bold; } 
+code span.op { color: #666666; } 
+code span.ot { color: #007020; } 
+code span.pp { color: #bc7a00; } 
+code span.sc { color: #4070a0; } 
+code span.ss { color: #bb6688; } 
+code span.st { color: #4070a0; } 
+code span.va { color: #19177c; } 
+code span.vs { color: #4070a0; } 
+code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } 
+</style>
+<script>
+// apply pandoc div.sourceCode style to pre.sourceCode instead
+(function() {
+  var sheets = document.styleSheets;
+  for (var i = 0; i < sheets.length; i++) {
+    if (sheets[i].ownerNode.dataset["origin"] !== "pandoc") continue;
+    try { var rules = sheets[i].cssRules; } catch (e) { continue; }
+    var j = 0;
+    while (j < rules.length) {
+      var rule = rules[j];
+      // check if there is a div.sourceCode rule
+      if (rule.type !== rule.STYLE_RULE || rule.selectorText !== "div.sourceCode") {
+        j++;
+        continue;
+      }
+      var style = rule.style.cssText;
+      // check if color or background-color is set
+      if (rule.style.color === '' && rule.style.backgroundColor === '') {
+        j++;
+        continue;
+      }
+      // replace div.sourceCode by a pre.sourceCode rule
+      sheets[i].deleteRule(j);
+      sheets[i].insertRule('pre.sourceCode{' + style + '}', j);
+    }
+  }
+})();
+</script>
+
+
+
+
+<style type="text/css">body {
+background-color: #fff;
+margin: 1em auto;
+max-width: 700px;
+overflow: visible;
+padding-left: 2em;
+padding-right: 2em;
+font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+font-size: 14px;
+line-height: 1.35;
+}
+#TOC {
+clear: both;
+margin: 0 0 10px 10px;
+padding: 4px;
+width: 400px;
+border: 1px solid #CCCCCC;
+border-radius: 5px;
+background-color: #f6f6f6;
+font-size: 13px;
+line-height: 1.3;
+}
+#TOC .toctitle {
+font-weight: bold;
+font-size: 15px;
+margin-left: 5px;
+}
+#TOC ul {
+padding-left: 40px;
+margin-left: -1.5em;
+margin-top: 5px;
+margin-bottom: 5px;
+}
+#TOC ul ul {
+margin-left: -2em;
+}
+#TOC li {
+line-height: 16px;
+}
+table {
+margin: 1em auto;
+border-width: 1px;
+border-color: #DDDDDD;
+border-style: outset;
+border-collapse: collapse;
+}
+table th {
+border-width: 2px;
+padding: 5px;
+border-style: inset;
+}
+table td {
+border-width: 1px;
+border-style: inset;
+line-height: 18px;
+padding: 5px 5px;
+}
+table, table th, table td {
+border-left-style: none;
+border-right-style: none;
+}
+table thead, table tr.even {
+background-color: #f7f7f7;
+}
+p {
+margin: 0.5em 0;
+}
+blockquote {
+background-color: #f6f6f6;
+padding: 0.25em 0.75em;
+}
+hr {
+border-style: solid;
+border: none;
+border-top: 1px solid #777;
+margin: 28px 0;
+}
+dl {
+margin-left: 0;
+}
+dl dd {
+margin-bottom: 13px;
+margin-left: 13px;
+}
+dl dt {
+font-weight: bold;
+}
+ul {
+margin-top: 0;
+}
+ul li {
+list-style: circle outside;
+}
+ul ul {
+margin-bottom: 0;
+}
+pre, code {
+background-color: #f7f7f7;
+border-radius: 3px;
+color: #333;
+white-space: pre-wrap; 
+}
+pre {
+border-radius: 3px;
+margin: 5px 0px 10px 0px;
+padding: 10px;
+}
+pre:not([class]) {
+background-color: #f7f7f7;
+}
+code {
+font-family: Consolas, Monaco, 'Courier New', monospace;
+font-size: 85%;
+}
+p > code, li > code {
+padding: 2px 0px;
+}
+div.figure {
+text-align: center;
+}
+img {
+background-color: #FFFFFF;
+padding: 2px;
+border: 1px solid #DDDDDD;
+border-radius: 3px;
+border: 1px solid #CCCCCC;
+margin: 0 5px;
+}
+h1 {
+margin-top: 0;
+font-size: 35px;
+line-height: 40px;
+}
+h2 {
+border-bottom: 4px solid #f7f7f7;
+padding-top: 10px;
+padding-bottom: 2px;
+font-size: 145%;
+}
+h3 {
+border-bottom: 2px solid #f7f7f7;
+padding-top: 10px;
+font-size: 120%;
+}
+h4 {
+border-bottom: 1px solid #f7f7f7;
+margin-left: 8px;
+font-size: 105%;
+}
+h5, h6 {
+border-bottom: 1px solid #ccc;
+font-size: 105%;
+}
+a {
+color: #0033dd;
+text-decoration: none;
+}
+a:hover {
+color: #6666ff; }
+a:visited {
+color: #800080; }
+a:visited:hover {
+color: #BB00BB; }
+a[href^="http:"] {
+text-decoration: underline; }
+a[href^="https:"] {
+text-decoration: underline; }
+
+code > span.kw { color: #555; font-weight: bold; } 
+code > span.dt { color: #902000; } 
+code > span.dv { color: #40a070; } 
+code > span.bn { color: #d14; } 
+code > span.fl { color: #d14; } 
+code > span.ch { color: #d14; } 
+code > span.st { color: #d14; } 
+code > span.co { color: #888888; font-style: italic; } 
+code > span.ot { color: #007020; } 
+code > span.al { color: #ff0000; font-weight: bold; } 
+code > span.fu { color: #900; font-weight: bold; } 
+code > span.er { color: #a61717; background-color: #e3d2d2; } 
+</style>
+
+
+
+
+</head>
+
+<body>
+
+
+
+
+<h1 class="title toc-ignore">LNWorkshopExample_TOV-E_Metadata</h1>
+
+
+
+<div id="a-mini-introduction-to-r-markdown" class="section level2">
+<h2>A Mini-Introduction to R Markdown</h2>
+<p>Markdown documents are text files that contain a mixture of standard
+prose and programming code that can be easily be rendered as HTML or PDF
+outputs. During this rendering process, any code blocks are run and the
+results embedded in the output document. This can be really useful for
+making figures and tables to help describe a data set and to document
+analyses. <a href="https://rmarkdown.rstudio.com/">R markdown</a> is a
+flavour of markdown that interfaces with the <a href="https://www.r-project.org/">R statistical platform</a>.</p>
+<p>Code can included in R markdown documents in ‘chunks’ such as the one
+shown below:</p>
+<div class="sourceCode" id="cb1"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" tabindex="-1"></a><span class="co"># This is setup code that is not displayed in the rendered HTML file but includes packages</span></span>
+<span id="cb1-2"><a href="#cb1-2" tabindex="-1"></a><span class="co"># needed for producing the metadata document</span></span>
+<span id="cb1-3"><a href="#cb1-3" tabindex="-1"></a>knitr<span class="sc">::</span>opts_chunk<span class="sc">$</span><span class="fu">set</span>(<span class="at">echo =</span> <span class="cn">TRUE</span>)</span>
+<span id="cb1-4"><a href="#cb1-4" tabindex="-1"></a><span class="co"># Import the Living Norway tools into R</span></span>
+<span id="cb1-5"><a href="#cb1-5" tabindex="-1"></a><span class="fu">library</span>(LivingNorwayR)</span>
+<span id="cb1-6"><a href="#cb1-6" tabindex="-1"></a><span class="co">#&gt; Welcome to LivingNorwayR for more information</span></span>
+<span id="cb1-7"><a href="#cb1-7" tabindex="-1"></a><span class="co">#&gt;   about the project see https://livingnorway.no/.</span></span>
+<span id="cb1-8"><a href="#cb1-8" tabindex="-1"></a><span class="co">#&gt;   If you have any problems please submit an issue</span></span>
+<span id="cb1-9"><a href="#cb1-9" tabindex="-1"></a><span class="co">#&gt;                         at https://github.com/LivingNorway/LivingNorwayR</span></span></code></pre></div>
+<p>However, you will only see this code chunk in the original markdown
+text. At the top of the code chunk you will see the line
+<code>input=FALSE</code>. This means that the code is run but that
+neither the code itself or the results of the code is printed when
+rendering the document to HTML or any other output format. This is
+useful when you want to set up things in the background that you don’t
+want rendered into the document. In this example the code chunk above
+calls the libraries that our markdown document will use so we don’t need
+to have that code rendered to the HTML output. We can also make the code
+chunks print to the rendered document by removing the
+<code>include=FALSE</code> term. Sometimes, you might only want the
+result to be created in the rendered document. For example, when
+producing figures, we often do not want the code that produces the
+figure in the rendered document, just the figure itself. By setting
+<code>echo=FALSE</code> in the code chunk options then the code itself
+will not be rendered in the output document. For example the code chunk
+below will appear as code in the markdown document but will be replaced
+by a figure in the rendered document.</p>
+<p><img src="data:image/png;base64,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" /><!-- --></p>
+<p>The easiest way to render this document is to open it in <a href="https://www.rstudio.com/">RStudio</a> and then click on the ‘Knit’
+button that is in the top left-hand corner. A rendered version of the
+document is then opened in a browser.</p>
+<p>We can also call R functions ‘inline’. For example in the markdown
+version of the document the term: 4 appears as ‘r 2+2’ but, in the
+rendered version, R is called and the calculation is performed. The
+statement is then replaced by the output (in this case ‘4’). A full
+introduction to R markdown is beyond the scope of this document but
+there are number of <a href="https://bookdown.org/yihui/rmarkdown/">great resources</a> to
+learn more.</p>
+<p>When using markdown to describe the metadata of the project we can
+use a number of functions described in the Living Norway package to help
+flag sections of text that we want to export as information to appear in
+an EML file. The code chunk below will allow you to see flagged sections
+of text being rendered in a red colour in HTML output. For normal
+descriptions of metadata you would not want this so you should delete
+this code chunk for your own metadata descriptions.</p>
+<div class="sourceCode" id="cb2"><pre class="sourceCode css"><code class="sourceCode css"><span id="cb2-1"><a href="#cb2-1" tabindex="-1"></a>span<span class="fu">.LNmetadata</span> {</span>
+<span id="cb2-2"><a href="#cb2-2" tabindex="-1"></a>  <span class="kw">color</span>: <span class="cn">red</span><span class="op">;</span></span>
+<span id="cb2-3"><a href="#cb2-3" tabindex="-1"></a>}</span></code></pre></div>
+<style type="text/css">
+span.LNmetadata {
+color: red;
+}
+</style>
+</div>
+<div id="the-dataset" class="section level2">
+<h2>The Dataset</h2>
+<p>Metadata must have a dataset tag. We give this tag an ID and it
+serves as a parent ID for a lot of other tags that describe the dataset.
+Often we don’t want to print any text associated with this tag to the
+output so we can therefore set the <code>isHidden</code> argument to
+<code>TRUE</code> so that the tag is invisible in the rendered output.
+The main purpose of calling this function is to set an ID for the
+dataset tag that can be used to relate other things to it (here we have
+used the ID ‘TOVEDataset’). In the dataset function we can also give
+information on the title to use in the dataset through the
+<code>title.tagText</code> argument.</p>
+<p><span id="LNdataset_TOVEDataset" class="LNmetadata" style="display:none"></span><span id="LNtitle_b1e0798a-0fb6-4ad9-b401-2d92aae69bef_TOVEDataset" class="LNmetadata" style="display:none">TOV-E Bird monitoring sampling
+data</span></p>
+<p>We can also associate some keywords with the dataset. To do this we
+can set up a ‘keywordSet’ tag using the relevant tagging function
+<span id="LNkeywordSet_TOVEKeywordSet_TOVEDataset" class="LNmetadata" style="display:none"></span>
+and then specifying keywords such as <span id="LNkeyword_ec49e3e6-d6b5-48d3-9f60-3034dec08760_TOVEKeywordSet" class="LNmetadata">breeding birds</span> and <span id="LNkeyword_8ba92a24-a577-4e61-b105-4173ce089f6c_TOVEKeywordSet" class="LNmetadata">sampling event</span>.</p>
+<p>We must also specify some contact information for the individual or
+organisation responsible for coordinating with users of the dataset.
+Here the responsible user is
+<span id="LNcontact_TOVEContact_TOVEDataset" class="LNmetadata"></span>
+<span id="LNindividualName_23da21cc-4c53-4733-812c-743623e540ae_TOVEContact" class="LNmetadata"></span><span id="LNgivenName_b92ad5d5-0e53-4774-9121-ee4d4383a244_23da21cc-4c53-4733-812c-743623e540ae" class="LNmetadata">John Atle</span> <span id="LNsurName_cb7322ea-7d4e-4e52-bc4b-b1a108890b58_23da21cc-4c53-4733-812c-743623e540ae" class="LNmetadata">Kålås</span>.</p>
+</div>
+<div id="abstract" class="section level2">
+<h2>Abstract</h2>
+<p>We will need to produce an abstract for the data. You can flag the
+abstract for export to EML using the following inline code:</p>
+<p><span id="LNabstract_TOVEAbstract_TOVEDataset" class="LNmetadata">Data from the project: “Extensive monitoring of
+breeding birds (TOV-E)” from 2006 up until today. The project is carried
+out in cooperation between NOF BirdLife Norway, Norwegian Institute for
+Nature Research (NINA) and Norwegian Environment Agency, and is the most
+important project for monitoring population trends for Norwegian bird
+species on land.</span></p>
+<p>The Living Norway package will also allow for alternative
+translations of EML elements. In the inline code above we set the tagID
+argument. We can provide an alternative translation for the element with
+that tagID using the following code:</p>
+<p><span id="LNvalue_eb9bacfe-2ebb-4bf4-9a18-ad4c78ef8d60_TOVEAbstract" class="LNmetadata" style="display:none" xml:lang="nb">Data fra
+prosjektet “Ekstensiv overvåking av hekkefugl (TOV-E)” fra 2006 og frem
+til i dag. Prosjektet utføres i samarbeid mellom Norsk Ornitologisk
+Forening, Norsk Institutt for Naturforskning og Miljødirektoratet og er
+det viktigste prosjektet for å overvåke populasjonstrender for norske
+fuglearter på land.</span></p>
+<p>By default, alternative translations are hidden in rendered HTML
+output. The information is still there but it is not displayed when
+being opened by a browser. This is useful when you want information to
+be exported to the EML file but do not to display them in the rendered
+HTML. If you would rather the alternative translation be displayed, then
+you can add the argument <code>isHidden=FALSE</code> to the
+<code>LNaddTranslation</code> function.</p>
+</div>
+<div id="dataset-creators" class="section level2">
+<h2>Dataset creators</h2>
+<p>The dataset was created by the following people:</p>
+<ul>
+<li><span id="LNcreator_TOVECreator1_TOVEDataset" class="LNmetadata"></span><span id="LNindividualName_7a228ffe-48d8-401d-a569-2c41fde350df_TOVECreator1" class="LNmetadata"></span><span id="LNgivenName_c939269d-8752-4b4a-97dd-a331b34fe13b_7a228ffe-48d8-401d-a569-2c41fde350df" class="LNmetadata">John Atle</span> <span id="LNsurName_58d76323-ea6f-4a69-8170-08ca1b62ef1c_7a228ffe-48d8-401d-a569-2c41fde350df" class="LNmetadata">Kålås</span> who is a <span id="LNpositionName_75546e00-a666-456f-a2b2-864135a54944_TOVECreator1" class="LNmetadata">senior researcher</span> at the <span id="LNorganizationName_befd93c7-5bb9-43b0-9f4e-5c96532c81dd_TOVECreator1" class="LNmetadata">Norwegian Institute for Nature Research</span> (<span id="LNelectronicMailAddress_9f430e22-a87f-4a30-896b-18281a43592a_TOVECreator1" class="LNmetadata"><a href="mailto:john.kalas@nina.no" class="email">john.kalas@nina.no</a></span>).</li>
+<li><span id="LNcreator_TOVECreator2_TOVEDataset" class="LNmetadata"></span><span id="LNindividualName_28cd4080-2f7c-45c6-bb3f-5ba277b8d9f9_TOVECreator2" class="LNmetadata"></span><span id="LNgivenName_5bf240bc-3c00-4ade-9ff8-a7c3aeee9220_28cd4080-2f7c-45c6-bb3f-5ba277b8d9f9" class="LNmetadata">Ingar Jostein</span> <span id="LNsurName_246eb5d7-6f01-419e-b475-617b81bf10ab_28cd4080-2f7c-45c6-bb3f-5ba277b8d9f9" class="LNmetadata">Øien</span> who is a <span id="LNpositionName_f0324209-f33c-4be4-92e1-3fc94dc0075a_TOVECreator2" class="LNmetadata">fagsjef</span> at the <span id="LNorganizationName_71567447-9cd6-4384-beab-1c6dc9580bd7_TOVECreator2" class="LNmetadata">Norsk Ornitologisk Forening</span> (<span id="LNelectronicMailAddress_49c9acd9-4fa5-43a5-a2ad-af8c012f5b50_TOVECreator2" class="LNmetadata"><a href="mailto:ingar@birdlife.no" class="email">ingar@birdlife.no</a></span>).</li>
+<li><span id="LNcreator_TOVECreator3_TOVEDataset" class="LNmetadata"></span><span id="LNindividualName_659de71d-98c7-4762-81dd-4a570b36cdc3_TOVECreator3" class="LNmetadata"></span><span id="LNgivenName_10ed9993-623d-4372-93b0-f1660e73da13_659de71d-98c7-4762-81dd-4a570b36cdc3" class="LNmetadata">Bård</span> <span id="LNsurName_6e160727-54f0-4800-9a72-27c839774b50_659de71d-98c7-4762-81dd-4a570b36cdc3" class="LNmetadata">Stokke</span> who is a <span id="LNpositionName_19aa2506-41cc-4fc6-a03d-b8200459f4ab_TOVECreator3" class="LNmetadata">senior researcher</span> at the <span id="LNorganizationName_88760407-fbca-4aba-9f78-c81e3d009320_TOVECreator3" class="LNmetadata">Norwegian Institute for Nature Research</span> (<span id="LNelectronicMailAddress_b0e085e8-69fb-414e-b457-864cf5881057_TOVECreator3" class="LNmetadata"><a href="mailto:bard.stokke@nina.no" class="email">bard.stokke@nina.no</a></span>).</li>
+<li><span id="LNcreator_TOVECreator4_TOVEDataset" class="LNmetadata"></span><span id="LNindividualName_87bd32fe-1ef2-496f-a9de-8f1253a8976d_TOVECreator4" class="LNmetadata"></span><span id="LNgivenName_33c22eea-5501-4cbb-b675-977280c14bb4_87bd32fe-1ef2-496f-a9de-8f1253a8976d" class="LNmetadata">Roald</span> <span id="LNsurName_caefa5d1-cd74-4f7a-bd76-fc0484d62314_87bd32fe-1ef2-496f-a9de-8f1253a8976d" class="LNmetadata">Vang</span> who is a <span id="LNpositionName_633bfa4c-eeb6-4eb2-b5c4-8cd28992561d_TOVECreator4" class="LNmetadata">data manager</span> at the <span id="LNorganizationName_2e78aecf-1f0f-4991-b03c-2f6b98835e54_TOVECreator4" class="LNmetadata">Norwegian Institute for Nature Research</span> (<span id="LNelectronicMailAddress_2433765d-6b67-45af-a0db-dce995056e20_TOVECreator4" class="LNmetadata"><a href="mailto:roald.vang@nina.no" class="email">roald.vang@nina.no</a></span>).</li>
+</ul>
+</div>
+
+
+
+<!-- code folding -->
+
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    script.src  = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML";
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+
+</body>
+</html>

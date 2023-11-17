@@ -1,4 +1,4 @@
-# Hei!!
+# Hei!!!
 git_vaccinate()
 usethis::use_git()
 2

@@ -5,3 +5,5 @@ usethis::use_git()
 usethis::create_github_token()
 gitcreds::gitcreds_set()
 1
+usethis::use_github()
+3
